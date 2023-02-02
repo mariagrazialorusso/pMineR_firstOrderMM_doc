@@ -1,0 +1,112 @@
+# Train and get the Model: trainModel() and getModel() functions
+
+In order to display the DFG, it is necessary at first to call the **trainModel()** function. 
+This function enables the creation of the NxN matrix, which, as we discussed in the preceding section, provides the basis for the creation of the graph.
+
+```{r,echo=FALSE, eval=TRUE, include=TRUE, results='hide', warning=FALSE, message=FALSE}
+library(pMineR)
+objDL<-dataLoader()
+objDL$load.csv(nomeFile = "EventLog1.csv",IDName = "ID",EVENTName= "Event",dateColumnName="Date",format.column.date = "%Y-%m-%d",quote = ",")
+obj.out<-objDL$getData()
+
+param.list<-list()
+param.list$considerAutoLoop<-FALSE
+param.list$threshold<-0.02
+objFOMM<-firstOrderMarkovModel(parameters.list = param.list)
+objFOMM$loadDataset(dataList = obj.out)
+```
+```{r}
+objFOMM$trainModel()
+```
+
+
+After doing so, we can use the **getModel()** function, which returns the trained internal FOMM model in terms of:
+
+ - _DFG_;
+ - _MMatrix_: the matrix containing the number of cases, from the event associated at the line i to the event associated to the column j;
+ - _MMatrix.perc_: the matrix containing the probability to move, from the event associated at the line i to the event associated to the column j.
+ 
+You must specify the kind of output by the **kindOfOutput** input, which allows the following values:
+
+ - **"grViz"** for the DFG.
+ - **"MMatrix"**
+ - **"MMatrix.perc"**
+
+```{r}
+objFOMM$getModel(kindOfOutput ="MMatrix" )
+
+```
+
+```{r}
+objFOMM$getModel(kindOfOutput ="MMatrix.perc")
+```
+```{r}
+DFG<-objFOMM$getModel(kindOfOutput ="grViz")
+library(DiagrammeR)
+grViz(DFG)
+```
+```{r}
+
+```
+
+The **plot()** function can be used as an alternative to the getModel(kindOfOutput="grViz") method:
+
+```{r}
+script<-objFOMM$plot(giveItBack = T)
+grViz(script)
+```
+
+
+# Survival Analysis: KaplanMeier() and LogRankTest() function
+
+The fomm class also contains methods for performing the Survival Analysis. 
+
+The first of these functions is KaplanMeier() function, which builds a Kaplan Meier curve through an indicated pathway that the user enters by the function inputs. 
+
+Specifically, the the function  arguments are: 
+
+ - **fromState**: first event of the pathway;
+ - **toState**: last event of the pathway;
+ - **passingThrough**: array containing the events labels that should be included in the pathay;
+ - **passingNotThrough**: array containing the events labels that should NOT be included in the pathay;
+ - **PDV**: array representing the event(s) the case must experience in order to become censored
+ - **withPatientID**: array which allows to filter by case-ID
+ - **UM**: time unit (_default: "mins", possible values: "mins","hours","days","weeks","months"_)
+ 
+```{r}
+survival.list<-objFOMM$KaplanMeier(fromState = "Medical Visit",
+                                   toState = "death",
+                                   passingThrough = "partial resection",
+                                   PDVAt = "MedicalVisit",
+                                   UM = "weeks")
+
+s1 <- survfit(Surv(time, outcome) ~ 1, data = survival.list$table)
+survminer::ggsurvplot(s1)
+
+#also: survminer::ggsurvplot(survival.list$KM,data = survival.list$table)
+```
+```{r}
+survival.list2<-objFOMM$KaplanMeier(fromState = "Medical Visit",
+                                   toState = "chemotherapy",
+                                   passingThrough = "partial resection",
+                                   PDVAt = "MedicalVisit",
+                                   UM = "weeks")
+
+s2 <- survfit(Surv(time, outcome) ~ 1, data = survival.list2$table)
+survminer::ggsurvplot(s1,palette = "blue")
+```
+
+It is possible to compare two Kaplan Meier through a Log Rank test by the **LogRankTest()** function:
+
+```{r}
+log.out<-objFOMM$LogRankTest(KM1 = survival.list,KM2 = survival.list2)
+
+log.out$survdiff
+
+```
+```{r}
+new.df <- rbind(survival.list$table,survival.list2$table)
+new.df$KM <- c(rep("KM1",nrow(survival.list$table) ),rep("KM2",nrow(survival.list2$table) ))
+survminer::ggsurvplot(fit = log.out$survfit,data = new.df,conf.int = T)
+```
+ 

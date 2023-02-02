@@ -1,0 +1,1004 @@
+ID,Event,Date
+1,Medical Visit,2001-01-14
+1,Biopsy,2001-01-19
+1,total resection,2001-02-04
+1,MedicalVisit,2001-04-14
+1,death,2001-04-15
+2,Medical Visit,2001-01-09
+2,Medical Visit,2001-01-21
+2,Medical Visit,2001-01-27
+2,Medical Visit,2001-02-04
+2,Biopsy,2001-02-13
+2,total resection,2001-02-19
+2,chemotherapy,2001-02-27
+2,chemotherapy,2001-02-28
+2,MedicalVisit,2001-06-08
+2,death,2001-06-09
+3,Imaging,2001-01-03
+3,Imaging,2001-01-07
+3,Imaging,2001-01-19
+3,Medical Visit,2001-02-01
+3,Biopsy,2001-02-02
+3,partial resection,2001-02-13
+3,MedicalVisit,2001-07-21
+3,death,2001-07-22
+4,Imaging,2001-01-16
+4,Imaging,2001-01-30
+4,Biopsy,2001-02-05
+4,total resection,2001-02-21
+4,death,2001-02-24
+5,Medical Visit,2001-01-08
+5,Medical Visit,2001-01-22
+5,Medical Visit,2001-02-03
+5,Medical Visit,2001-02-08
+5,death,2001-02-10
+6,Imaging,2001-01-09
+6,Medical Visit,2001-01-24
+6,Medical Visit,2001-02-02
+6,Biopsy,2001-02-06
+6,partial resection,2001-02-26
+6,MedicalVisit,2001-07-02
+6,MedicalVisit,2001-09-13
+6,death,2001-09-14
+7,Medical Visit,2001-01-10
+7,Imaging,2001-01-20
+7,Medical Visit,2001-01-30
+7,Imaging,2001-02-10
+7,Biopsy,2001-02-19
+7,total resection,2001-02-27
+7,chemotherapy,2001-03-07
+7,chemotherapy,2001-03-10
+7,chemotherapy,2001-03-12
+7,chemotherapy,2001-03-14
+7,chemotherapy,2001-03-16
+7,MedicalVisit,2001-05-28
+7,death,2001-05-29
+8,Imaging,2001-01-16
+8,Biopsy,2001-01-18
+8,partial resection,2001-01-28
+8,radiotherapy,2001-02-02
+8,radiotherapy,2001-02-03
+8,radiotherapy,2001-02-06
+8,radiotherapy,2001-02-07
+8,radiotherapy,2001-02-10
+8,radiotherapy,2001-02-11
+8,radiotherapy,2001-02-14
+8,radiotherapy,2001-02-16
+8,radiotherapy,2001-02-17
+8,radiotherapy,2001-02-18
+8,radiotherapy,2001-02-21
+8,radiotherapy,2001-02-22
+8,radiotherapy,2001-02-23
+8,MedicalVisit,2001-08-12
+8,MedicalVisit,2001-12-15
+8,death,2001-12-16
+9,Medical Visit,2001-01-02
+9,Imaging,2001-01-05
+9,Biopsy,2001-01-10
+9,partial resection,2001-01-18
+9,death,2001-01-20
+10,Imaging,2001-01-16
+10,Imaging,2001-01-31
+10,Medical Visit,2001-02-04
+10,Imaging,2001-02-10
+10,Biopsy,2001-02-15
+10,total resection,2001-02-23
+10,radiotherapy,2001-03-06
+10,radiotherapy,2001-03-09
+10,radiotherapy,2001-03-12
+10,radiotherapy,2001-03-15
+10,radiotherapy,2001-03-17
+10,radiotherapy,2001-03-19
+10,radiotherapy,2001-03-21
+10,radiotherapy,2001-03-23
+10,radiotherapy,2001-03-24
+10,radiotherapy,2001-03-27
+10,radiotherapy,2001-03-30
+10,MedicalVisit,2001-09-16
+10,death,2001-09-17
+11,Imaging,2001-01-05
+11,Medical Visit,2001-01-18
+11,Biopsy,2001-01-22
+11,partial resection,2001-01-30
+11,radiotherapy,2001-02-09
+11,radiotherapy,2001-02-11
+11,radiotherapy,2001-02-12
+11,radiotherapy,2001-02-15
+11,radiotherapy,2001-02-18
+11,radiotherapy,2001-02-20
+11,radiotherapy,2001-02-22
+11,radiotherapy,2001-02-24
+11,radiotherapy,2001-02-25
+11,radiotherapy,2001-02-26
+11,radiotherapy,2001-02-27
+11,MedicalVisit,2001-07-15
+11,MedicalVisit,2001-10-19
+12,Medical Visit,2001-01-07
+12,Biopsy,2001-01-12
+12,partial resection,2001-01-17
+12,MedicalVisit,2001-07-12
+12,death,2001-07-13
+13,Imaging,2001-01-12
+13,Medical Visit,2001-01-15
+13,Imaging,2001-01-23
+13,Imaging,2001-01-24
+13,Medical Visit,2001-01-29
+13,Biopsy,2001-01-31
+13,total resection,2001-02-19
+13,MedicalVisit,2001-06-12
+14,Imaging,2001-01-06
+14,Imaging,2001-01-19
+14,Medical Visit,2001-01-25
+14,Imaging,2001-02-07
+14,Medical Visit,2001-02-19
+14,Biopsy,2001-02-27
+14,partial resection,2001-03-04
+14,death,2001-03-08
+15,Medical Visit,2001-01-06
+15,Imaging,2001-01-18
+15,Imaging,2001-01-29
+15,Imaging,2001-02-07
+15,Biopsy,2001-02-16
+15,total resection,2001-02-20
+15,chemotherapy,2001-02-22
+15,chemotherapy,2001-02-23
+15,chemotherapy,2001-02-25
+15,radiotherapy,2001-02-26
+15,radiotherapy,2001-03-01
+15,radiotherapy,2001-03-03
+15,radiotherapy,2001-03-06
+15,radiotherapy,2001-03-09
+15,radiotherapy,2001-03-10
+15,radiotherapy,2001-03-13
+15,radiotherapy,2001-03-15
+15,radiotherapy,2001-03-17
+15,radiotherapy,2001-03-18
+15,radiotherapy,2001-03-21
+15,MedicalVisit,2001-06-14
+15,MedicalVisit,2001-09-01
+15,MedicalVisit,2002-02-18
+15,MedicalVisit,2002-06-29
+15,death,2002-06-30
+16,Medical Visit,2001-01-07
+16,Imaging,2001-01-09
+16,Imaging,2001-01-19
+16,Medical Visit,2001-02-02
+16,Medical Visit,2001-02-12
+16,Imaging,2001-02-19
+16,Biopsy,2001-02-22
+16,partial resection,2001-02-27
+16,death,2001-03-06
+17,Imaging,2001-01-09
+17,Imaging,2001-01-12
+17,Medical Visit,2001-01-22
+17,Biopsy,2001-01-27
+17,partial resection,2001-02-08
+17,MedicalVisit,2001-05-25
+17,MedicalVisit,2001-11-10
+17,death,2001-11-11
+18,Imaging,2001-01-16
+18,Medical Visit,2001-01-30
+18,Imaging,2001-02-05
+18,Imaging,2001-02-17
+18,Imaging,2001-02-22
+18,Medical Visit,2001-02-27
+18,Biopsy,2001-03-02
+18,total resection,2001-03-03
+18,MedicalVisit,2001-08-08
+18,death,2001-08-09
+19,Medical Visit,2001-01-16
+19,Imaging,2001-01-27
+19,Imaging,2001-02-05
+19,Biopsy,2001-02-09
+19,total resection,2001-02-20
+19,MedicalVisit,2001-08-22
+19,MedicalVisit,2002-02-10
+19,MedicalVisit,2002-05-25
+20,Medical Visit,2001-01-10
+20,Medical Visit,2001-01-18
+20,Medical Visit,2001-01-20
+20,Medical Visit,2001-02-03
+20,Imaging,2001-02-10
+20,Biopsy,2001-02-20
+20,total resection,2001-03-04
+20,radiotherapy,2001-03-17
+20,radiotherapy,2001-03-19
+20,radiotherapy,2001-03-20
+20,radiotherapy,2001-03-22
+20,radiotherapy,2001-03-23
+20,radiotherapy,2001-03-26
+20,radiotherapy,2001-03-28
+20,radiotherapy,2001-03-31
+20,radiotherapy,2001-04-01
+20,radiotherapy,2001-04-03
+20,radiotherapy,2001-04-05
+20,radiotherapy,2001-04-06
+20,radiotherapy,2001-04-07
+20,radiotherapy,2001-04-08
+20,radiotherapy,2001-04-10
+20,radiotherapy,2001-04-13
+20,MedicalVisit,2001-07-13
+20,MedicalVisit,2001-11-02
+20,death,2001-11-03
+21,Imaging,2001-01-04
+21,Medical Visit,2001-01-09
+21,Imaging,2001-01-11
+21,Medical Visit,2001-01-15
+21,Imaging,2001-01-17
+21,Biopsy,2001-01-25
+21,total resection,2001-02-03
+21,MedicalVisit,2001-07-04
+21,death,2001-07-05
+22,Imaging,2001-01-03
+22,Medical Visit,2001-01-14
+22,Biopsy,2001-01-24
+22,partial resection,2001-02-06
+22,death,2001-02-19
+23,Imaging,2001-01-02
+23,Imaging,2001-01-09
+23,Medical Visit,2001-01-14
+23,Medical Visit,2001-01-19
+23,Imaging,2001-02-01
+23,Biopsy,2001-02-07
+23,partial resection,2001-02-17
+23,death,2001-02-24
+24,Imaging,2001-01-02
+24,Imaging,2001-01-08
+24,Medical Visit,2001-01-21
+24,Medical Visit,2001-01-25
+24,Biopsy,2001-01-30
+24,total resection,2001-02-18
+24,chemotherapy,2001-03-02
+24,chemotherapy,2001-03-04
+24,chemotherapy,2001-03-07
+24,chemotherapy,2001-03-10
+24,chemotherapy,2001-03-12
+24,radiotherapy,2001-03-13
+24,radiotherapy,2001-03-14
+24,radiotherapy,2001-03-17
+24,radiotherapy,2001-03-20
+24,radiotherapy,2001-03-23
+24,radiotherapy,2001-03-24
+24,radiotherapy,2001-03-26
+24,radiotherapy,2001-03-27
+24,radiotherapy,2001-03-28
+24,radiotherapy,2001-03-30
+24,radiotherapy,2001-03-31
+24,radiotherapy,2001-04-02
+24,radiotherapy,2001-04-05
+24,MedicalVisit,2001-08-18
+24,MedicalVisit,2002-01-30
+24,MedicalVisit,2002-07-22
+24,MedicalVisit,2003-01-05
+24,MedicalVisit,2003-03-21
+25,Medical Visit,2001-01-09
+25,Medical Visit,2001-01-10
+25,Medical Visit,2001-01-13
+25,Medical Visit,2001-01-25
+25,Biopsy,2001-02-01
+25,total resection,2001-02-15
+25,MedicalVisit,2001-06-09
+25,MedicalVisit,2001-10-20
+25,MedicalVisit,2002-04-02
+26,Medical Visit,2001-01-03
+26,Imaging,2001-01-15
+26,Medical Visit,2001-01-29
+26,Biopsy,2001-02-02
+26,total resection,2001-02-13
+26,MedicalVisit,2001-05-06
+26,MedicalVisit,2001-07-25
+26,death,2001-07-26
+27,Imaging,2001-01-08
+27,Imaging,2001-01-14
+27,Imaging,2001-01-22
+27,Medical Visit,2001-01-24
+27,Medical Visit,2001-01-28
+27,Biopsy,2001-02-02
+27,partial resection,2001-02-16
+27,death,2001-02-23
+28,Medical Visit,2001-01-02
+28,Imaging,2001-01-09
+28,Imaging,2001-01-17
+28,Medical Visit,2001-02-01
+28,death,2001-02-12
+29,Imaging,2001-01-07
+29,Imaging,2001-01-15
+29,Medical Visit,2001-01-21
+29,Medical Visit,2001-02-04
+29,Biopsy,2001-02-05
+29,total resection,2001-02-09
+29,death,2001-02-10
+30,Medical Visit,2001-01-14
+30,Medical Visit,2001-01-16
+30,Medical Visit,2001-01-23
+30,Imaging,2001-02-03
+30,Medical Visit,2001-02-06
+30,Medical Visit,2001-02-16
+30,Biopsy,2001-02-24
+30,death,2001-03-07
+31,Imaging,2001-01-07
+31,Medical Visit,2001-01-17
+31,Biopsy,2001-01-21
+31,total resection,2001-01-24
+31,death,2001-01-29
+32,Imaging,2001-01-13
+32,Imaging,2001-01-20
+32,Imaging,2001-02-01
+32,Biopsy,2001-02-06
+32,partial resection,2001-02-08
+32,chemotherapy,2001-02-17
+32,chemotherapy,2001-02-20
+32,chemotherapy,2001-02-21
+32,chemotherapy,2001-02-23
+32,chemotherapy,2001-02-25
+32,MedicalVisit,2001-07-18
+32,death,2001-07-19
+33,Imaging,2001-01-10
+33,Biopsy,2001-01-14
+33,partial resection,2001-01-26
+33,chemotherapy,2001-02-01
+33,chemotherapy,2001-02-02
+33,chemotherapy,2001-02-03
+33,chemotherapy,2001-02-05
+33,MedicalVisit,2001-06-04
+33,MedicalVisit,2001-09-18
+33,MedicalVisit,2001-12-09
+33,death,2001-12-10
+34,Medical Visit,2001-01-03
+34,Imaging,2001-01-05
+34,Medical Visit,2001-01-06
+34,Imaging,2001-01-08
+34,Medical Visit,2001-01-23
+34,Imaging,2001-01-29
+34,Biopsy,2001-02-08
+34,total resection,2001-02-17
+34,death,2001-03-01
+35,Imaging,2001-01-12
+35,Medical Visit,2001-01-21
+35,Biopsy,2001-01-23
+35,partial resection,2001-01-24
+35,chemotherapy,2001-02-07
+35,chemotherapy,2001-02-08
+35,chemotherapy,2001-02-10
+35,chemotherapy,2001-02-11
+35,chemotherapy,2001-02-14
+35,chemotherapy,2001-02-17
+35,radiotherapy,2001-02-19
+35,radiotherapy,2001-02-22
+35,radiotherapy,2001-02-25
+35,radiotherapy,2001-02-27
+35,radiotherapy,2001-03-02
+35,radiotherapy,2001-03-03
+35,radiotherapy,2001-03-04
+35,radiotherapy,2001-03-05
+35,MedicalVisit,2001-06-05
+35,MedicalVisit,2001-11-27
+35,death,2001-11-28
+36,Imaging,2001-01-10
+36,Imaging,2001-01-15
+36,Imaging,2001-01-24
+36,Medical Visit,2001-02-08
+36,Imaging,2001-02-10
+36,Imaging,2001-02-15
+36,Biopsy,2001-02-16
+36,partial resection,2001-02-19
+36,chemotherapy,2001-03-08
+36,chemotherapy,2001-03-11
+36,chemotherapy,2001-03-13
+36,chemotherapy,2001-03-16
+36,chemotherapy,2001-03-19
+36,radiotherapy,2001-03-20
+36,radiotherapy,2001-03-23
+36,radiotherapy,2001-03-24
+36,radiotherapy,2001-03-27
+36,MedicalVisit,2001-06-20
+36,MedicalVisit,2001-11-25
+36,death,2001-11-26
+37,Medical Visit,2001-01-11
+37,Imaging,2001-01-25
+37,Biopsy,2001-01-26
+37,total resection,2001-02-12
+37,chemotherapy,2001-02-25
+37,chemotherapy,2001-02-27
+37,chemotherapy,2001-02-28
+37,radiotherapy,2001-03-03
+37,radiotherapy,2001-03-06
+37,radiotherapy,2001-03-08
+37,MedicalVisit,2001-08-12
+37,MedicalVisit,2001-10-30
+37,MedicalVisit,2002-04-11
+37,death,2002-04-12
+38,Imaging,2001-01-10
+38,Imaging,2001-01-15
+38,Biopsy,2001-01-17
+38,total resection,2001-01-29
+38,death,2001-02-13
+39,Medical Visit,2001-01-03
+39,Biopsy,2001-01-09
+39,partial resection,2001-01-26
+39,death,2001-02-01
+40,Imaging,2001-01-02
+40,Medical Visit,2001-01-06
+40,Medical Visit,2001-01-10
+40,Medical Visit,2001-01-25
+40,Biopsy,2001-01-29
+40,partial resection,2001-02-11
+40,death,2001-02-17
+41,Medical Visit,2001-01-12
+41,Medical Visit,2001-01-17
+41,Medical Visit,2001-01-20
+41,Medical Visit,2001-01-24
+41,Imaging,2001-02-04
+41,Medical Visit,2001-02-12
+41,Biopsy,2001-02-20
+41,partial resection,2001-02-24
+41,MedicalVisit,2001-05-20
+41,MedicalVisit,2001-07-20
+41,MedicalVisit,2001-12-07
+41,MedicalVisit,2002-02-13
+41,death,2002-02-14
+42,Medical Visit,2001-01-06
+42,Medical Visit,2001-01-20
+42,Imaging,2001-01-27
+42,Medical Visit,2001-02-01
+42,Biopsy,2001-02-11
+42,total resection,2001-02-24
+42,death,2001-03-02
+43,Imaging,2001-01-04
+43,Medical Visit,2001-01-10
+43,Biopsy,2001-01-15
+43,partial resection,2001-01-28
+43,MedicalVisit,2001-05-09
+43,MedicalVisit,2001-07-16
+43,MedicalVisit,2001-11-04
+43,MedicalVisit,2002-03-09
+43,death,2002-03-10
+44,Medical Visit,2001-01-04
+44,Medical Visit,2001-01-06
+44,Medical Visit,2001-01-07
+44,death,2001-01-20
+45,Imaging,2001-01-11
+45,Biopsy,2001-01-21
+45,partial resection,2001-02-08
+45,MedicalVisit,2001-06-26
+45,death,2001-06-27
+46,Medical Visit,2001-01-13
+46,Imaging,2001-01-19
+46,Imaging,2001-01-29
+46,Medical Visit,2001-02-10
+46,Biopsy,2001-02-16
+46,partial resection,2001-02-18
+46,chemotherapy,2001-02-28
+46,chemotherapy,2001-03-01
+46,chemotherapy,2001-03-03
+46,chemotherapy,2001-03-06
+46,chemotherapy,2001-03-08
+46,radiotherapy,2001-03-09
+46,radiotherapy,2001-03-12
+46,radiotherapy,2001-03-13
+46,radiotherapy,2001-03-14
+46,radiotherapy,2001-03-17
+46,radiotherapy,2001-03-20
+46,radiotherapy,2001-03-21
+46,radiotherapy,2001-03-24
+46,MedicalVisit,2001-08-08
+46,MedicalVisit,2001-11-09
+47,Medical Visit,2001-01-07
+47,Medical Visit,2001-01-21
+47,Medical Visit,2001-01-29
+47,Imaging,2001-02-05
+47,death,2001-02-07
+48,Medical Visit,2001-01-06
+48,Imaging,2001-01-21
+48,Biopsy,2001-01-22
+48,partial resection,2001-02-05
+48,death,2001-02-07
+49,Medical Visit,2001-01-12
+49,Medical Visit,2001-01-24
+49,Imaging,2001-02-04
+49,Biopsy,2001-02-05
+49,partial resection,2001-02-23
+49,death,2001-03-06
+50,Medical Visit,2001-01-10
+50,Medical Visit,2001-01-11
+50,Medical Visit,2001-01-25
+50,Imaging,2001-01-31
+50,Medical Visit,2001-02-12
+50,Medical Visit,2001-02-23
+50,Biopsy,2001-03-04
+50,death,2001-03-13
+51,Imaging,2001-01-10
+51,Medical Visit,2001-01-12
+51,Biopsy,2001-01-15
+51,partial resection,2001-01-29
+51,chemotherapy,2001-02-14
+51,chemotherapy,2001-02-17
+51,chemotherapy,2001-02-19
+51,chemotherapy,2001-02-20
+51,radiotherapy,2001-02-21
+51,radiotherapy,2001-02-22
+51,radiotherapy,2001-02-24
+51,radiotherapy,2001-02-25
+51,radiotherapy,2001-02-27
+51,radiotherapy,2001-03-02
+51,radiotherapy,2001-03-03
+51,radiotherapy,2001-03-06
+51,radiotherapy,2001-03-08
+51,radiotherapy,2001-03-10
+51,radiotherapy,2001-03-11
+51,radiotherapy,2001-03-13
+51,radiotherapy,2001-03-16
+51,radiotherapy,2001-03-19
+51,MedicalVisit,2001-08-30
+51,death,2001-08-31
+52,Medical Visit,2001-01-06
+52,death,2001-01-15
+53,Medical Visit,2001-01-15
+53,Medical Visit,2001-01-24
+53,Imaging,2001-02-05
+53,Imaging,2001-02-16
+53,Biopsy,2001-02-20
+53,partial resection,2001-03-08
+53,MedicalVisit,2001-05-24
+53,death,2001-05-25
+54,Medical Visit,2001-01-14
+54,Imaging,2001-01-22
+54,Imaging,2001-02-04
+54,Biopsy,2001-02-07
+54,total resection,2001-02-11
+54,death,2001-02-20
+55,Medical Visit,2001-01-16
+55,Medical Visit,2001-01-19
+55,Imaging,2001-02-01
+55,Biopsy,2001-02-04
+55,partial resection,2001-02-14
+55,MedicalVisit,2001-04-26
+55,MedicalVisit,2001-08-19
+55,MedicalVisit,2002-01-01
+55,death,2002-01-02
+56,Medical Visit,2001-01-14
+56,Medical Visit,2001-01-22
+56,Medical Visit,2001-01-31
+56,Imaging,2001-02-10
+56,Medical Visit,2001-02-13
+56,Biopsy,2001-02-14
+56,total resection,2001-02-16
+56,MedicalVisit,2001-06-03
+57,Medical Visit,2001-01-15
+57,Imaging,2001-01-23
+57,Medical Visit,2001-01-31
+57,Imaging,2001-02-03
+57,Medical Visit,2001-02-10
+57,Medical Visit,2001-02-21
+57,Biopsy,2001-02-25
+57,total resection,2001-03-02
+57,MedicalVisit,2001-07-13
+58,Medical Visit,2001-01-16
+58,Imaging,2001-01-26
+58,Medical Visit,2001-01-29
+58,Medical Visit,2001-02-10
+58,Medical Visit,2001-02-24
+58,Biopsy,2001-03-03
+58,total resection,2001-03-22
+58,death,2001-04-01
+59,Medical Visit,2001-01-13
+59,Imaging,2001-01-27
+59,Biopsy,2001-01-30
+59,total resection,2001-01-31
+59,MedicalVisit,2001-06-30
+59,death,2001-07-01
+60,Medical Visit,2001-01-08
+60,Biopsy,2001-01-11
+60,partial resection,2001-01-26
+60,death,2001-01-27
+61,Imaging,2001-01-16
+61,Imaging,2001-01-19
+61,Medical Visit,2001-01-29
+61,Medical Visit,2001-02-09
+61,Medical Visit,2001-02-14
+61,Biopsy,2001-02-15
+61,total resection,2001-03-05
+61,radiotherapy,2001-03-11
+61,radiotherapy,2001-03-13
+61,radiotherapy,2001-03-16
+61,radiotherapy,2001-03-19
+61,MedicalVisit,2001-07-17
+61,death,2001-07-18
+62,Imaging,2001-01-04
+62,Biopsy,2001-01-08
+62,partial resection,2001-01-17
+62,MedicalVisit,2001-06-16
+62,death,2001-06-17
+63,Imaging,2001-01-05
+63,Imaging,2001-01-12
+63,Imaging,2001-01-15
+63,Imaging,2001-01-20
+63,Imaging,2001-02-02
+63,Imaging,2001-02-08
+63,Biopsy,2001-02-18
+63,total resection,2001-02-28
+63,chemotherapy,2001-03-09
+63,chemotherapy,2001-03-12
+63,chemotherapy,2001-03-14
+63,chemotherapy,2001-03-17
+63,chemotherapy,2001-03-20
+63,chemotherapy,2001-03-23
+63,radiotherapy,2001-03-24
+63,radiotherapy,2001-03-25
+63,radiotherapy,2001-03-26
+63,radiotherapy,2001-03-28
+63,radiotherapy,2001-03-29
+63,radiotherapy,2001-03-31
+63,radiotherapy,2001-04-01
+63,radiotherapy,2001-04-04
+63,radiotherapy,2001-04-05
+63,radiotherapy,2001-04-06
+63,radiotherapy,2001-04-08
+63,radiotherapy,2001-04-09
+63,radiotherapy,2001-04-11
+63,radiotherapy,2001-04-12
+63,radiotherapy,2001-04-13
+63,radiotherapy,2001-04-16
+63,MedicalVisit,2001-08-08
+63,MedicalVisit,2002-01-16
+63,MedicalVisit,2002-04-18
+63,death,2002-04-19
+64,Medical Visit,2001-01-04
+64,Imaging,2001-01-18
+64,Medical Visit,2001-01-26
+64,Medical Visit,2001-02-07
+64,Medical Visit,2001-02-20
+64,Imaging,2001-02-23
+64,Biopsy,2001-02-26
+64,partial resection,2001-03-09
+64,death,2001-03-22
+65,Medical Visit,2001-01-03
+65,Medical Visit,2001-01-18
+65,Medical Visit,2001-02-01
+65,Biopsy,2001-02-07
+65,partial resection,2001-02-08
+65,death,2001-02-12
+66,Medical Visit,2001-01-02
+66,Biopsy,2001-01-10
+66,total resection,2001-01-27
+66,chemotherapy,2001-02-10
+66,chemotherapy,2001-02-11
+66,chemotherapy,2001-02-14
+66,chemotherapy,2001-02-16
+66,chemotherapy,2001-02-19
+66,chemotherapy,2001-02-21
+66,radiotherapy,2001-02-22
+66,radiotherapy,2001-02-23
+66,radiotherapy,2001-02-24
+66,radiotherapy,2001-02-25
+66,radiotherapy,2001-02-27
+66,MedicalVisit,2001-07-24
+66,MedicalVisit,2001-12-29
+66,death,2001-12-30
+67,Medical Visit,2001-01-07
+67,death,2001-01-20
+68,Imaging,2001-01-11
+68,Imaging,2001-01-25
+68,Imaging,2001-01-29
+68,Biopsy,2001-02-08
+68,total resection,2001-02-22
+68,death,2001-03-04
+69,Medical Visit,2001-01-16
+69,Medical Visit,2001-01-29
+69,Medical Visit,2001-02-13
+69,Imaging,2001-02-15
+69,Imaging,2001-02-23
+69,Medical Visit,2001-03-01
+69,Biopsy,2001-03-07
+69,partial resection,2001-03-14
+69,death,2001-03-17
+70,Medical Visit,2001-01-07
+70,Medical Visit,2001-01-11
+70,Medical Visit,2001-01-21
+70,Medical Visit,2001-01-27
+70,Biopsy,2001-02-06
+70,total resection,2001-02-23
+70,MedicalVisit,2001-08-21
+70,death,2001-08-22
+71,Imaging,2001-01-10
+71,Medical Visit,2001-01-14
+71,Medical Visit,2001-01-27
+71,Medical Visit,2001-01-28
+71,Imaging,2001-01-29
+71,Biopsy,2001-02-04
+71,total resection,2001-02-24
+71,MedicalVisit,2001-05-22
+71,death,2001-05-23
+72,Imaging,2001-01-15
+72,Medical Visit,2001-01-28
+72,Medical Visit,2001-02-04
+72,Medical Visit,2001-02-07
+72,death,2001-02-14
+73,Medical Visit,2001-01-09
+73,Biopsy,2001-01-12
+73,partial resection,2001-01-30
+73,chemotherapy,2001-02-03
+73,chemotherapy,2001-02-04
+73,chemotherapy,2001-02-06
+73,chemotherapy,2001-02-08
+73,MedicalVisit,2001-04-27
+73,MedicalVisit,2001-09-21
+73,MedicalVisit,2002-02-27
+73,death,2002-02-28
+74,Medical Visit,2001-01-09
+74,Biopsy,2001-01-13
+74,partial resection,2001-01-15
+74,MedicalVisit,2001-05-08
+74,death,2001-05-09
+75,Imaging,2001-01-04
+75,Medical Visit,2001-01-13
+75,Medical Visit,2001-01-27
+75,Biopsy,2001-01-30
+75,partial resection,2001-02-07
+75,death,2001-02-17
+76,Medical Visit,2001-01-03
+76,Imaging,2001-01-05
+76,Medical Visit,2001-01-14
+76,Biopsy,2001-01-19
+76,partial resection,2001-01-27
+76,chemotherapy,2001-02-11
+76,chemotherapy,2001-02-14
+76,chemotherapy,2001-02-15
+76,radiotherapy,2001-02-18
+76,radiotherapy,2001-02-21
+76,radiotherapy,2001-02-24
+76,radiotherapy,2001-02-26
+76,radiotherapy,2001-02-27
+76,radiotherapy,2001-03-01
+76,radiotherapy,2001-03-03
+76,radiotherapy,2001-03-04
+76,radiotherapy,2001-03-05
+76,radiotherapy,2001-03-06
+76,MedicalVisit,2001-05-13
+76,MedicalVisit,2001-10-18
+76,death,2001-10-19
+77,Imaging,2001-01-12
+77,Imaging,2001-01-26
+77,Medical Visit,2001-01-29
+77,Biopsy,2001-02-08
+77,partial resection,2001-02-13
+77,chemotherapy,2001-02-22
+77,chemotherapy,2001-02-25
+77,chemotherapy,2001-02-28
+77,chemotherapy,2001-03-02
+77,chemotherapy,2001-03-03
+77,radiotherapy,2001-03-06
+77,radiotherapy,2001-03-07
+77,radiotherapy,2001-03-10
+77,radiotherapy,2001-03-12
+77,radiotherapy,2001-03-15
+77,radiotherapy,2001-03-18
+77,radiotherapy,2001-03-20
+77,radiotherapy,2001-03-21
+77,radiotherapy,2001-03-24
+77,radiotherapy,2001-03-26
+77,radiotherapy,2001-03-29
+77,death,2001-03-30
+78,Medical Visit,2001-01-03
+78,Medical Visit,2001-01-04
+78,Medical Visit,2001-01-05
+78,Imaging,2001-01-18
+78,Biopsy,2001-01-24
+78,partial resection,2001-02-01
+78,MedicalVisit,2001-04-20
+78,MedicalVisit,2001-08-18
+78,MedicalVisit,2002-01-28
+78,death,2002-01-29
+79,Imaging,2001-01-15
+79,Imaging,2001-01-17
+79,Imaging,2001-01-31
+79,Imaging,2001-02-08
+79,Imaging,2001-02-19
+79,Medical Visit,2001-02-23
+79,Biopsy,2001-02-27
+79,partial resection,2001-03-16
+79,death,2001-03-18
+80,Medical Visit,2001-01-15
+80,Biopsy,2001-01-24
+80,partial resection,2001-02-01
+80,death,2001-02-03
+81,Medical Visit,2001-01-08
+81,Medical Visit,2001-01-21
+81,Imaging,2001-01-22
+81,Medical Visit,2001-01-27
+81,death,2001-01-30
+82,Medical Visit,2001-01-11
+82,Biopsy,2001-01-16
+82,death,2001-01-22
+83,Imaging,2001-01-12
+83,Medical Visit,2001-01-20
+83,Imaging,2001-02-02
+83,Medical Visit,2001-02-06
+83,Biopsy,2001-02-13
+83,partial resection,2001-02-24
+83,chemotherapy,2001-03-02
+83,chemotherapy,2001-03-03
+83,chemotherapy,2001-03-05
+83,chemotherapy,2001-03-08
+83,chemotherapy,2001-03-09
+83,chemotherapy,2001-03-12
+83,MedicalVisit,2001-07-18
+83,death,2001-07-19
+84,Imaging,2001-01-08
+84,Imaging,2001-01-22
+84,Imaging,2001-01-30
+84,Medical Visit,2001-02-12
+84,Medical Visit,2001-02-17
+84,Biopsy,2001-02-22
+84,partial resection,2001-03-12
+84,death,2001-03-18
+85,Imaging,2001-01-15
+85,Imaging,2001-01-27
+85,Biopsy,2001-02-02
+85,total resection,2001-02-13
+85,death,2001-02-15
+86,Imaging,2001-01-09
+86,Imaging,2001-01-13
+86,Medical Visit,2001-01-20
+86,Imaging,2001-01-22
+86,Imaging,2001-02-01
+86,Biopsy,2001-02-07
+86,partial resection,2001-02-16
+86,MedicalVisit,2001-05-08
+86,death,2001-05-09
+87,Medical Visit,2001-01-06
+87,death,2001-01-17
+88,Medical Visit,2001-01-11
+88,Imaging,2001-01-13
+88,Imaging,2001-01-18
+88,Biopsy,2001-01-24
+88,partial resection,2001-01-25
+88,MedicalVisit,2001-06-22
+88,MedicalVisit,2001-12-09
+89,Imaging,2001-01-13
+89,Medical Visit,2001-01-23
+89,Biopsy,2001-01-26
+89,total resection,2001-01-27
+89,chemotherapy,2001-01-31
+89,chemotherapy,2001-02-03
+89,chemotherapy,2001-02-06
+89,radiotherapy,2001-02-07
+89,radiotherapy,2001-02-08
+89,radiotherapy,2001-02-11
+89,radiotherapy,2001-02-13
+89,radiotherapy,2001-02-15
+89,radiotherapy,2001-02-16
+89,radiotherapy,2001-02-18
+89,radiotherapy,2001-02-20
+89,radiotherapy,2001-02-22
+89,radiotherapy,2001-02-24
+89,radiotherapy,2001-02-25
+89,radiotherapy,2001-02-27
+89,radiotherapy,2001-03-02
+89,radiotherapy,2001-03-04
+89,radiotherapy,2001-03-06
+89,radiotherapy,2001-03-07
+89,MedicalVisit,2001-06-22
+89,MedicalVisit,2001-09-19
+89,MedicalVisit,2002-01-29
+89,MedicalVisit,2002-05-07
+89,MedicalVisit,2002-10-25
+89,death,2002-10-26
+90,Imaging,2001-01-09
+90,Medical Visit,2001-01-12
+90,Medical Visit,2001-01-22
+90,Medical Visit,2001-02-01
+90,Imaging,2001-02-06
+90,Biopsy,2001-02-11
+90,partial resection,2001-02-23
+90,death,2001-02-24
+91,Imaging,2001-01-16
+91,Medical Visit,2001-01-23
+91,Medical Visit,2001-01-28
+91,Imaging,2001-02-06
+91,Medical Visit,2001-02-10
+91,Biopsy,2001-02-20
+91,partial resection,2001-03-03
+91,death,2001-03-14
+92,Imaging,2001-01-09
+92,Medical Visit,2001-01-10
+92,Medical Visit,2001-01-22
+92,Imaging,2001-01-29
+92,Medical Visit,2001-02-10
+92,death,2001-02-22
+93,Medical Visit,2001-01-14
+93,Medical Visit,2001-01-22
+93,Imaging,2001-01-30
+93,Imaging,2001-02-05
+93,Imaging,2001-02-18
+93,death,2001-02-23
+94,Imaging,2001-01-07
+94,Imaging,2001-01-11
+94,Imaging,2001-01-20
+94,Medical Visit,2001-01-27
+94,Medical Visit,2001-02-09
+94,Imaging,2001-02-23
+94,Biopsy,2001-02-25
+94,partial resection,2001-03-05
+94,death,2001-03-06
+95,Medical Visit,2001-01-11
+95,Medical Visit,2001-01-22
+95,Medical Visit,2001-02-06
+95,Imaging,2001-02-07
+95,Imaging,2001-02-20
+95,Biopsy,2001-02-26
+95,partial resection,2001-03-04
+95,chemotherapy,2001-03-15
+95,chemotherapy,2001-03-17
+95,radiotherapy,2001-03-20
+95,radiotherapy,2001-03-22
+95,MedicalVisit,2001-08-22
+95,death,2001-08-23
+96,Imaging,2001-01-02
+96,Medical Visit,2001-01-14
+96,Medical Visit,2001-01-17
+96,Biopsy,2001-01-23
+96,total resection,2001-01-27
+96,MedicalVisit,2001-03-30
+96,MedicalVisit,2001-07-15
+96,MedicalVisit,2001-11-22
+97,Medical Visit,2001-01-07
+97,Medical Visit,2001-01-16
+97,Medical Visit,2001-01-25
+97,Biopsy,2001-02-03
+97,total resection,2001-02-21
+97,chemotherapy,2001-02-25
+97,chemotherapy,2001-02-27
+97,radiotherapy,2001-03-01
+97,radiotherapy,2001-03-03
+97,radiotherapy,2001-03-04
+97,radiotherapy,2001-03-05
+97,radiotherapy,2001-03-07
+97,radiotherapy,2001-03-09
+97,radiotherapy,2001-03-10
+97,MedicalVisit,2001-07-30
+97,MedicalVisit,2001-10-01
+98,Imaging,2001-01-13
+98,Imaging,2001-01-16
+98,Biopsy,2001-01-18
+98,total resection,2001-01-31
+98,death,2001-02-06
+99,Imaging,2001-01-07
+99,Medical Visit,2001-01-13
+99,Medical Visit,2001-01-23
+99,Imaging,2001-02-02
+99,Medical Visit,2001-02-06
+99,Medical Visit,2001-02-07
+99,Biopsy,2001-02-16
+99,death,2001-02-17
+100,Medical Visit,2001-01-15
+100,Medical Visit,2001-01-26
+100,Imaging,2001-02-08
+100,Imaging,2001-02-22
+100,Medical Visit,2001-03-07
+100,Biopsy,2001-03-08
+100,total resection,2001-03-10
+100,chemotherapy,2001-03-15
+100,chemotherapy,2001-03-16
+100,chemotherapy,2001-03-18
+100,chemotherapy,2001-03-20
+100,chemotherapy,2001-03-21
+100,chemotherapy,2001-03-22
+100,radiotherapy,2001-03-25
+100,radiotherapy,2001-03-27
+100,radiotherapy,2001-03-28
+100,radiotherapy,2001-03-30
+100,radiotherapy,2001-04-02
+100,radiotherapy,2001-04-04
+100,radiotherapy,2001-04-05
+100,radiotherapy,2001-04-08
+100,radiotherapy,2001-04-09
+100,radiotherapy,2001-04-11
+100,radiotherapy,2001-04-12
+100,radiotherapy,2001-04-15
+100,radiotherapy,2001-04-16
+100,radiotherapy,2001-04-19
+100,radiotherapy,2001-04-20
+100,radiotherapy,2001-04-23
+100,MedicalVisit,2001-09-13
+100,MedicalVisit,2002-03-06

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Train and get the Model: trainModel() and getModel() functions | pMineR: First order Markov Model</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Train and get the Model: trainModel() and getModel() functions | pMineR: First order Markov Model" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Train and get the Model: trainModel() and getModel() functions | pMineR: First order Markov Model" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="PM liquid lab" />
+
+
+<meta name="date" content="2023-02-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="survival-analysis-kaplanmeier-and-logranktest-function.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.9/grViz.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">pMineR: First Order markov Model </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Class Introduction</a></li>
+<li class="chapter" data-level="2" data-path="train-and-get-the-model-trainmodel-and-getmodel-functions.html"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html"><i class="fa fa-check"></i><b>2</b> Train and get the Model: trainModel() and getModel() functions</a></li>
+<li class="chapter" data-level="3" data-path="survival-analysis-kaplanmeier-and-logranktest-function.html"><a href="survival-analysis-kaplanmeier-and-logranktest-function.html"><i class="fa fa-check"></i><b>3</b> Survival Analysis: KaplanMeier() and LogRankTest() function</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">pMineR: First order Markov Model</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="train-and-get-the-model-trainmodel-and-getmodel-functions" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Train and get the Model: trainModel() and getModel() functions<a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#train-and-get-the-model-trainmodel-and-getmodel-functions" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In order to display the DFG, it is necessary at first to call the <strong>trainModel()</strong> function.
+This function enables the creation of the NxN matrix, which, as we discussed in the preceding section, provides the basis for the creation of the graph.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb4-1" aria-hidden="true" tabindex="-1"></a>objFOMM<span class="sc">$</span><span class="fu">trainModel</span>()</span></code></pre></div>
+<p>After doing so, we can use the <strong>getModel()</strong> function, which returns the trained internal FOMM model in terms of:</p>
+<ul>
+<li><em>DFG</em>;</li>
+<li><em>MMatrix</em>: the matrix containing the number of cases, from the event associated at the line i to the event associated to the column j;</li>
+<li><em>MMatrix.perc</em>: the matrix containing the probability to move, from the event associated at the line i to the event associated to the column j.</li>
+</ul>
+<p>You must specify the kind of output by the <strong>kindOfOutput</strong> input, which allows the following values:</p>
+<ul>
+<li><strong>“grViz”</strong> for the DFG.</li>
+<li><strong>“MMatrix”</strong></li>
+<li><strong>“MMatrix.perc”</strong></li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb5-1" aria-hidden="true" tabindex="-1"></a>objFOMM<span class="sc">$</span><span class="fu">getModel</span>(<span class="at">kindOfOutput =</span><span class="st">&quot;MMatrix&quot;</span> )</span></code></pre></div>
+<pre><code>##                   BEGIN END Medical Visit Biopsy total resection MedicalVisit death
+## BEGIN                 0   0            53      0               0            0     0
+## END                   0   0             0      0               0            0     0
+## Medical Visit         0   0             0     52               0            0     9
+## Biopsy                0   0             0      0              37            0     4
+## total resection       0   0             0      0               0           13    11
+## MedicalVisit          0  12             0      0               0            0    40
+## death                 0  88             0      0               0            0     0
+## chemotherapy          0   0             0      0               0            6     0
+## Imaging               0   0            64     37               0            0     0
+## partial resection     0   0             0      0               0           14    21
+## radiotherapy          0   0             0      0               0           19     0
+##                   chemotherapy Imaging partial resection radiotherapy
+## BEGIN                        0      47                 0            0
+## END                          0       0                 0            0
+## Medical Visit                0      56                 0            0
+## Biopsy                       0       0                48            0
+## total resection             10       0                 0            3
+## MedicalVisit                 0       0                 0            0
+## death                        0       0                 0            0
+## chemotherapy                 0       0                 0           15
+## Imaging                      0       0                 0            0
+## partial resection           11       0                 0            2
+## radiotherapy                 0       0                 0            0</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb7-1" aria-hidden="true" tabindex="-1"></a>objFOMM<span class="sc">$</span><span class="fu">getModel</span>(<span class="at">kindOfOutput =</span><span class="st">&quot;MMatrix.perc&quot;</span>)</span></code></pre></div>
+<pre><code>##                   BEGIN       END Medical Visit    Biopsy total resection
+## BEGIN                 0 0.0000000     0.5300000 0.0000000       0.0000000
+## END                   0 0.0000000     0.0000000 0.0000000       0.0000000
+## Medical Visit         0 0.0000000     0.0000000 0.4444444       0.0000000
+## Biopsy                0 0.0000000     0.0000000 0.0000000       0.4157303
+## total resection       0 0.0000000     0.0000000 0.0000000       0.0000000
+## MedicalVisit          0 0.2307692     0.0000000 0.0000000       0.0000000
+## death                 0 1.0000000     0.0000000 0.0000000       0.0000000
+## chemotherapy          0 0.0000000     0.0000000 0.0000000       0.0000000
+## Imaging               0 0.0000000     0.6336634 0.3663366       0.0000000
+## partial resection     0 0.0000000     0.0000000 0.0000000       0.0000000
+## radiotherapy          0 0.0000000     0.0000000 0.0000000       0.0000000
+##                   MedicalVisit      death chemotherapy   Imaging partial resection
+## BEGIN                0.0000000 0.00000000    0.0000000 0.4700000         0.0000000
+## END                  0.0000000 0.00000000    0.0000000 0.0000000         0.0000000
+## Medical Visit        0.0000000 0.07692308    0.0000000 0.4786325         0.0000000
+## Biopsy               0.0000000 0.04494382    0.0000000 0.0000000         0.5393258
+## total resection      0.3513514 0.29729730    0.2702703 0.0000000         0.0000000
+## MedicalVisit         0.0000000 0.76923077    0.0000000 0.0000000         0.0000000
+## death                0.0000000 0.00000000    0.0000000 0.0000000         0.0000000
+## chemotherapy         0.2857143 0.00000000    0.0000000 0.0000000         0.0000000
+## Imaging              0.0000000 0.00000000    0.0000000 0.0000000         0.0000000
+## partial resection    0.2916667 0.43750000    0.2291667 0.0000000         0.0000000
+## radiotherapy         1.0000000 0.00000000    0.0000000 0.0000000         0.0000000
+##                   radiotherapy
+## BEGIN               0.00000000
+## END                 0.00000000
+## Medical Visit       0.00000000
+## Biopsy              0.00000000
+## total resection     0.08108108
+## MedicalVisit        0.00000000
+## death               0.00000000
+## chemotherapy        0.71428571
+## Imaging             0.00000000
+## partial resection   0.04166667
+## radiotherapy        0.00000000</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb9-1" aria-hidden="true" tabindex="-1"></a>DFG<span class="ot">&lt;-</span>objFOMM<span class="sc">$</span><span class="fu">getModel</span>(<span class="at">kindOfOutput =</span><span class="st">&quot;grViz&quot;</span>)</span>
+<span id="cb9-2"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DiagrammeR)</span>
+<span id="cb9-3"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">grViz</span>(DFG)</span></code></pre></div>
+<div id="htmlwidget-07952c648af05c03ec40" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-07952c648af05c03ec40">{"x":{"diagram":"digraph boxes_and_circles {\n\n               # a \"graph\" statement\n               graph [overlap = true, fontsize = 10, layout = dot ]\n\n               # several \"node\" statements\n               node [shape = oval,\n               fontname = Helvetica,\n               style = filled]\n\n               node [fillcolor = green]\n               \"BEGIN\";\n\n               node [fillcolor = red]\n               \"END\";\n\n               node [fillcolor = orange]\n                \"BEGIN\"; \"END\"; \"Medical Visit\"; \"Biopsy\"; \"total resection\"; \"MedicalVisit\"; \"death\"; \"chemotherapy\"; \"Imaging\"; \"partial resection\"; \"radiotherapy\"\n\n               edge [arrowsize = 1 ]\n               # several edge\n               \"BEGIN\"->\"Medical Visit\" [ label=\"53/100\n( 0.53 )\", penwidth=\"1.6\" ,fontsize = \"9.77\", color = Gray32]\n\"BEGIN\"->\"Imaging\" [ label=\"47/100\n( 0.47 )\", penwidth=\"1.42\" ,fontsize = \"9.23\", color = Gray37]\n\"Medical Visit\"->\"Biopsy\" [ label=\"52/117\n( 0.44 )\", penwidth=\"1.34333333333333\" ,fontsize = \"9\", color = Gray38]\n\"Medical Visit\"->\"death\" [ label=\"9/117\n( 0.08 )\", penwidth=\"0.4\" ,fontsize = \"5.69230769230769\", color = Gray64]\n\"Medical Visit\"->\"Imaging\" [ label=\"56/117\n( 0.48 )\", penwidth=\"1.44589743589744\" ,fontsize = \"9.30769230769231\", color = Gray36]\n\"Biopsy\"->\"total resection\" [ label=\"37/89\n( 0.42 )\", penwidth=\"1.25719101123596\" ,fontsize = \"8.74157303370787\", color = Gray40]\n\"Biopsy\"->\"death\" [ label=\"4/89\n( 0.04 )\", penwidth=\"0.4\" ,fontsize = \"5.40449438202247\", color = Gray66]\n\"Biopsy\"->\"partial resection\" [ label=\"48/89\n( 0.54 )\", penwidth=\"1.62797752808989\" ,fontsize = \"9.85393258426966\", color = Gray32]\n\"total resection\"->\"MedicalVisit\" [ label=\"13/37\n( 0.35 )\", penwidth=\"1.06405405405405\" ,fontsize = \"8.16216216216216\", color = Gray45]\n\"total resection\"->\"death\" [ label=\"11/37\n( 0.3 )\", penwidth=\"0.901891891891892\" ,fontsize = \"7.67567567567568\", color = Gray49]\n\"total resection\"->\"chemotherapy\" [ label=\"10/37\n( 0.27 )\", penwidth=\"0.820810810810811\" ,fontsize = \"7.43243243243243\", color = Gray51]\n\"total resection\"->\"radiotherapy\" [ label=\"3/37\n( 0.08 )\", penwidth=\"0.4\" ,fontsize = \"5.72972972972973\", color = Gray64]\n\"MedicalVisit\"->\"END\" [ label=\"12/52\n( 0.23 )\", penwidth=\"0.702307692307692\" ,fontsize = \"7.07692307692308\", color = Gray53]\n\"MedicalVisit\"->\"death\" [ label=\"40/52\n( 0.77 )\", penwidth=\"2.31769230769231\" ,fontsize = \"11.9230769230769\", color = Gray16]\n\"death\"->\"END\" [ label=\"88/88\n( 1 )\", penwidth=\"3.01\" ,fontsize = \"14\", color = Gray0]\n\"chemotherapy\"->\"MedicalVisit\" [ label=\"6/21\n( 0.29 )\", penwidth=\"0.867142857142857\" ,fontsize = \"7.57142857142857\", color = Gray50]\n\"chemotherapy\"->\"radiotherapy\" [ label=\"15/21\n( 0.71 )\", penwidth=\"2.15285714285714\" ,fontsize = \"11.4285714285714\", color = Gray20]\n\"Imaging\"->\"Medical Visit\" [ label=\"64/101\n( 0.63 )\", penwidth=\"1.9109900990099\" ,fontsize = \"10.7029702970297\", color = Gray25]\n\"Imaging\"->\"Biopsy\" [ label=\"37/101\n( 0.37 )\", penwidth=\"1.1090099009901\" ,fontsize = \"8.2970297029703\", color = Gray44]\n\"partial resection\"->\"MedicalVisit\" [ label=\"14/48\n( 0.29 )\", penwidth=\"0.885\" ,fontsize = \"7.625\", color = Gray49]\n\"partial resection\"->\"death\" [ label=\"21/48\n( 0.44 )\", penwidth=\"1.3225\" ,fontsize = \"8.9375\", color = Gray39]\n\"partial resection\"->\"chemotherapy\" [ label=\"11/48\n( 0.23 )\", penwidth=\"0.6975\" ,fontsize = \"7.0625\", color = Gray53]\n\"partial resection\"->\"radiotherapy\" [ label=\"2/48\n( 0.04 )\", penwidth=\"0.4\" ,fontsize = \"5.375\", color = Gray67]\n\"radiotherapy\"->\"MedicalVisit\" [ label=\"19/19\n( 1 )\", penwidth=\"3.01\" ,fontsize = \"14\", color = Gray0]\n\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<p>The <strong>plot()</strong> function can be used as an alternative to the getModel(kindOfOutput=“grViz”) method:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb10-1" aria-hidden="true" tabindex="-1"></a>script<span class="ot">&lt;-</span>objFOMM<span class="sc">$</span><span class="fu">plot</span>(<span class="at">giveItBack =</span> T)</span>
+<span id="cb10-2"><a href="train-and-get-the-model-trainmodel-and-getmodel-functions.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">grViz</span>(script)</span></code></pre></div>
+<div id="htmlwidget-9ea54f50b0f199648ee0" style="width:672px;height:480px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9ea54f50b0f199648ee0">{"x":{"diagram":"digraph boxes_and_circles {\n\n               # a \"graph\" statement\n               graph [overlap = true, fontsize = 10, layout = dot ]\n\n               # several \"node\" statements\n               node [shape = oval,\n               fontname = Helvetica,\n               style = filled]\n\n               node [fillcolor = green]\n               \"BEGIN\";\n\n               node [fillcolor = red]\n               \"END\";\n\n               node [fillcolor = orange]\n                \"BEGIN\"; \"END\"; \"Medical Visit\"; \"Biopsy\"; \"total resection\"; \"MedicalVisit\"; \"death\"; \"chemotherapy\"; \"Imaging\"; \"partial resection\"; \"radiotherapy\"\n\n               edge [arrowsize = 1 ]\n               # several edge\n               \"BEGIN\"->\"Medical Visit\" [ label=\"53/100\n( 0.53 )\", penwidth=\"1.6\" ,fontsize = \"9.77\", color = Gray32]\n\"BEGIN\"->\"Imaging\" [ label=\"47/100\n( 0.47 )\", penwidth=\"1.42\" ,fontsize = \"9.23\", color = Gray37]\n\"Medical Visit\"->\"Biopsy\" [ label=\"52/117\n( 0.44 )\", penwidth=\"1.34333333333333\" ,fontsize = \"9\", color = Gray38]\n\"Medical Visit\"->\"death\" [ label=\"9/117\n( 0.08 )\", penwidth=\"0.4\" ,fontsize = \"5.69230769230769\", color = Gray64]\n\"Medical Visit\"->\"Imaging\" [ label=\"56/117\n( 0.48 )\", penwidth=\"1.44589743589744\" ,fontsize = \"9.30769230769231\", color = Gray36]\n\"Biopsy\"->\"total resection\" [ label=\"37/89\n( 0.42 )\", penwidth=\"1.25719101123596\" ,fontsize = \"8.74157303370787\", color = Gray40]\n\"Biopsy\"->\"death\" [ label=\"4/89\n( 0.04 )\", penwidth=\"0.4\" ,fontsize = \"5.40449438202247\", color = Gray66]\n\"Biopsy\"->\"partial resection\" [ label=\"48/89\n( 0.54 )\", penwidth=\"1.62797752808989\" ,fontsize = \"9.85393258426966\", color = Gray32]\n\"total resection\"->\"MedicalVisit\" [ label=\"13/37\n( 0.35 )\", penwidth=\"1.06405405405405\" ,fontsize = \"8.16216216216216\", color = Gray45]\n\"total resection\"->\"death\" [ label=\"11/37\n( 0.3 )\", penwidth=\"0.901891891891892\" ,fontsize = \"7.67567567567568\", color = Gray49]\n\"total resection\"->\"chemotherapy\" [ label=\"10/37\n( 0.27 )\", penwidth=\"0.820810810810811\" ,fontsize = \"7.43243243243243\", color = Gray51]\n\"total resection\"->\"radiotherapy\" [ label=\"3/37\n( 0.08 )\", penwidth=\"0.4\" ,fontsize = \"5.72972972972973\", color = Gray64]\n\"MedicalVisit\"->\"END\" [ label=\"12/52\n( 0.23 )\", penwidth=\"0.702307692307692\" ,fontsize = \"7.07692307692308\", color = Gray53]\n\"MedicalVisit\"->\"death\" [ label=\"40/52\n( 0.77 )\", penwidth=\"2.31769230769231\" ,fontsize = \"11.9230769230769\", color = Gray16]\n\"death\"->\"END\" [ label=\"88/88\n( 1 )\", penwidth=\"3.01\" ,fontsize = \"14\", color = Gray0]\n\"chemotherapy\"->\"MedicalVisit\" [ label=\"6/21\n( 0.29 )\", penwidth=\"0.867142857142857\" ,fontsize = \"7.57142857142857\", color = Gray50]\n\"chemotherapy\"->\"radiotherapy\" [ label=\"15/21\n( 0.71 )\", penwidth=\"2.15285714285714\" ,fontsize = \"11.4285714285714\", color = Gray20]\n\"Imaging\"->\"Medical Visit\" [ label=\"64/101\n( 0.63 )\", penwidth=\"1.9109900990099\" ,fontsize = \"10.7029702970297\", color = Gray25]\n\"Imaging\"->\"Biopsy\" [ label=\"37/101\n( 0.37 )\", penwidth=\"1.1090099009901\" ,fontsize = \"8.2970297029703\", color = Gray44]\n\"partial resection\"->\"MedicalVisit\" [ label=\"14/48\n( 0.29 )\", penwidth=\"0.885\" ,fontsize = \"7.625\", color = Gray49]\n\"partial resection\"->\"death\" [ label=\"21/48\n( 0.44 )\", penwidth=\"1.3225\" ,fontsize = \"8.9375\", color = Gray39]\n\"partial resection\"->\"chemotherapy\" [ label=\"11/48\n( 0.23 )\", penwidth=\"0.6975\" ,fontsize = \"7.0625\", color = Gray53]\n\"partial resection\"->\"radiotherapy\" [ label=\"2/48\n( 0.04 )\", penwidth=\"0.4\" ,fontsize = \"5.375\", color = Gray67]\n\"radiotherapy\"->\"MedicalVisit\" [ label=\"19/19\n( 1 )\", penwidth=\"3.01\" ,fontsize = \"14\", color = Gray0]\n\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="survival-analysis-kaplanmeier-and-logranktest-function.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

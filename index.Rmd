@@ -1,0 +1,65 @@
+--- 
+title: "pMineR: First order Markov Model"
+author: "PM liquid lab"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+# Class Introduction
+
+The **firstOrderMarkovModel** class is the second one in pMineR that enables process discovery using the FOMM algorithm. 
+The FOMM is an appreciated, in healthcare, PD algorithm, which explores all the traces in the input EL and stores the absolute frequencies between directly subsequent events. It builds an NxN table, where N is the number of kind of events, and each row and column is associated to a specific event. Each cell of the matrix (pi,j) contains the probability to move, from the event associated at the line i to the event associated to the column j. The class allows the matrix to be easily represented with a _Direct Follower Graph (DFG)_.
+
+The first step, as usual, is to create an object of the class as follows:
+
+
+```{r, echo=FALSE,message=FALSE,warning=FALSE}
+
+library(pMineR)
+
+```
+  
+```{r,echo=TRUE}
+
+objFOMM<-firstOrderMarkovModel()
+
+```
+  
+These arguments can be specified in the class' constructor method:
+
+ - **'considerAutoLoop'**: boolean which indicates if the autoloops have to be admitted.
+ - **'threshold'** is the minimum value that a probability should have to do not be set to zero, in the transition matrix.
+ 
+ The constructor method of the class requires these two parameters to be entered as items of a list, as follows:
+ 
+```{r, echo=TRUE, eval=TRUE, results="hide"}
+library(pMineR)
+param.list<-list()
+param.list$considerAutoLoop<-FALSE
+param.list$threshold<-0.02
+objFOMM<-firstOrderMarkovModel(parameters.list = param.list)
+```
+ 
+ 
+
+The following step is to load the event Log through the **loadDataset()** function. This function requires as input the output of the _getData()_ function from the DataLoader calss:
+
+```{r, eval=FALSE, echo=TRUE}
+
+objDL<-dataLoader()
+objDL$load.csv(nomeFile = "EventLog1.csv",IDName = "ID",EVENTName= "Event",dateColumnName="Date",format.column.date = "%Y-%m-%d",quote = ",")
+obj.out<-objDL$getData()
+
+objFOMM$loadDataset(dataList = obj.out)
+
+```
